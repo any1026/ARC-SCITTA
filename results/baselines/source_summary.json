@@ -1,0 +1,36 @@
+{
+  "method": "source",
+  "checkpoint": "/home/zhaoruijin/MOURUI/sictta_reproduction_20260827/outputs/source_train_seed1/best.pth",
+  "domains": {
+    "C": {
+      "n": 400,
+      "od_dice": 0.7523455053451533,
+      "oc_dice": 0.776570483446788,
+      "macro_dice": 0.7644579943959706,
+      "od_assd": 3.5280773065661504,
+      "oc_assd": 3.362690659349073,
+      "assd": 3.445383982957611,
+      "seconds": 92.30884122848511,
+      "updates": 0
+    },
+    "D": {
+      "n": 400,
+      "od_dice": 0.7120662422859906,
+      "oc_dice": 0.7153603491191991,
+      "macro_dice": 0.7137132957025949,
+      "od_assd": 5.741788725061849,
+      "oc_assd": 4.830141644083689,
+      "assd": 5.285965184572769,
+      "seconds": 93.00532674789429,
+      "updates": 0
+    }
+  },
+  "average": {
+    "od_dice": 0.7322058738155719,
+    "oc_dice": 0.7459654162829936,
+    "macro_dice": 0.7390856450492828,
+    "od_assd": 4.634933015814,
+    "oc_assd": 4.096416151716381,
+    "assd": 4.365674583765189
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "method": "sictta",
+  "protocol": "single continuous C->D stream; no reset between domains",
+  "implementation": "official repository sotas/sictta.py",
+  "domains": {
+    "C": {
+      "n": 400.0,
+      "od_dice": 0.8391820791984265,
+      "od_assd": 2.2562337849445284,
+      "oc_dice": 0.8328772289278535,
+      "oc_assd": 2.607469190606876,
+      "macro_dice": 0.83602965406314,
+      "assd": 2.431851487775702,
+      "seconds": 107.02303910255432
+    },
+    "D": {
+      "n": 400.0,
+      "od_dice": 0.8125439806494683,
+      "od_assd": 3.810799769997093,
+      "oc_dice": 0.8008282761266196,
+      "oc_assd": 3.30484700406336,
+      "macro_dice": 0.8066861283880439,
+      "assd": 3.557823387030227,
+      "seconds": 120.13929581642151
+    }
+  },
+  "average": {
+    "od_dice": 0.8258630299239473,
+    "od_assd": 3.033516777470811,
+    "oc_dice": 0.8168527525272365,
+    "oc_assd": 2.956158097335118,
+    "macro_dice": 0.8213578912255919,
+    "assd": 2.9948374374029645
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "method": "cotta",
+  "protocol": "single continuous C->D stream; no reset between domains",
+  "implementation": "CoTTA port: EMA=.999, restore=0.001, AP=0.1, LR=0.001, symmetric=True, N=32, photometric alignment-safe augmentation",
+  "domains": {
+    "C": {
+      "n": 400.0,
+      "od_dice": 0.8234164505321226,
+      "od_assd": 2.952712449453672,
+      "oc_dice": 0.8057504481615709,
+      "oc_assd": 3.260233327374477,
+      "macro_dice": 0.8145834493468468,
+      "assd": 3.1064728884140744,
+      "seconds": 116.25051355361938
+    },
+    "D": {
+      "n": 400.0,
+      "od_dice": 0.7978976057793874,
+      "od_assd": 5.0544445960742745,
+      "oc_dice": 0.7490197572657258,
+      "oc_assd": 4.19152372955264,
+      "macro_dice": 0.7734586815225566,
+      "assd": 4.622984162813457,
+      "seconds": 113.78955793380737
+    }
+  },
+  "average": {
+    "od_dice": 0.810657028155755,
+    "od_assd": 4.0035785227639735,
+    "oc_dice": 0.7773851027136484,
+    "oc_assd": 3.725878528463558,
+    "macro_dice": 0.7940210654347017,
+    "assd": 3.8647285256137653
+  }
+}

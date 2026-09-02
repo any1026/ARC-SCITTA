@@ -1,0 +1,16 @@
+project: SCITTA-pro
+version: anatomy-sictta-v1
+dataset: Fundus-doFE
+source_domains: [A, B]
+target_domains: [C, D]
+source_train_cases: 208
+source_validation_cases: 52
+target_cases_per_domain: 400
+source_model: 2D-UNet
+input_size: 320x320
+source_epochs: 200
+seeds: [1, 2, 3]
+official_pool_length: 40
+official_top_k: 5
+adaptation_labels_used: false
+ablation_status: postponed_until_final_method

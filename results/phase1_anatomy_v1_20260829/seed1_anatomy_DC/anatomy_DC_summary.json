@@ -1,0 +1,47 @@
+{
+  "method": "anatomy",
+  "order": "DC",
+  "no_target_labels_for_admission": true,
+  "domains": {
+    "D": {
+      "n": 400,
+      "od_dice": 0.8262181016275392,
+      "od_assd": 3.28770434912635,
+      "oc_dice": 0.7735421798080472,
+      "oc_assd": 4.274191544759528,
+      "macro_dice": 0.7998801407177932,
+      "assd": 3.780947946942939,
+      "seconds": 99.18747448921204,
+      "diagnostics": {
+        "ccd_pass": 35,
+        "anatomy_pass": 20,
+        "pool_accept": 20,
+        "pool_size": 20
+      }
+    },
+    "C": {
+      "n": 400,
+      "od_dice": 0.8306476561223619,
+      "od_assd": 2.322528357259095,
+      "oc_dice": 0.8366020865509656,
+      "oc_assd": 2.576467152987359,
+      "macro_dice": 0.8336248713366637,
+      "assd": 2.449497755123227,
+      "seconds": 98.07649374008179,
+      "diagnostics": {
+        "ccd_pass": 64,
+        "anatomy_pass": 49,
+        "pool_accept": 49,
+        "pool_size": 41
+      }
+    }
+  },
+  "average": {
+    "od_dice": 0.8284328788749505,
+    "od_assd": 2.805116353192722,
+    "oc_dice": 0.8050721331795063,
+    "oc_assd": 3.4253293488734435,
+    "macro_dice": 0.8167525060272285,
+    "assd": 3.1152228510330833
+  }
+}

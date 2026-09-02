@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.pth
+*.pt
+*.zip
+*.nii
+*.nii.gz
+data/
+checkpoints/
+outputs/raw/
+*.log
