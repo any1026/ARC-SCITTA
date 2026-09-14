@@ -54,6 +54,7 @@ done
   "$SRC/stage9_retrieval_sweep.py" "$SRC/stage9_paper_aggregate.py"
 "$PY" "$SRC/stage3_transactional.py" --unit-test
 "$PY" "$SRC/v2_policy_matrix.py" --unit-test
+"$PY" "$SRC/stage8_sccf.py" --unit-test
 "$PY" "$SRC/stage9_fusion_sweep.py" --unit-test
 "$PY" "$SRC/stage9_retrieval_sweep.py" --unit-test
 

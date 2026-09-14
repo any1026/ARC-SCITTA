@@ -15,10 +15,10 @@ This commit freezes the Stage9 anatomy-aware continuous fusion configuration and
 
 ## Commit
 
-Planned commit subject:
+Primary freeze commit:
 
 ```text
-Freeze Stage9 anatomy fusion and add paper-table queue
+66a5fc2 Freeze Stage9 anatomy fusion and add paper-table queue
 ```
 
-The commit will be created only in the nested `SCITTA-pro` Git repository and pushed to its existing `origin` remote. The parent project directory is not part of this Git history.
+The commit was created only in the nested `SCITTA-pro` Git repository and pushed to its existing `origin/main`. The parent project directory is not part of this Git history. Follow-up audit hardening, if any, is committed separately rather than rewriting the published commit.
