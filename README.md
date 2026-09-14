@@ -37,6 +37,15 @@ These are project re-runs, not copied paper numbers. The current result is preli
 
 The Fundus-doFE data and source checkpoints remain on the project server and are deliberately excluded from this Git repository. See `docs/reproduction_protocol.md` for the server paths and the exact provenance information.
 
-## Research status
+## Current Stage9 confirmation
 
-The next implementation target is a safer SicTTA extension with explicit drift detection, source/adapted candidate comparison, case-level rollback and calibrated risk diagnostics. Ablations will be run after the final candidate is frozen.
+The current frozen candidate applies per-image RGB AdaIN, generates an Anatomy-SicTTA prediction, and continuously fuses it with a frozen source anchor using only the candidate's source-derived anatomy score:
+
+```text
+p_final = w * p_candidate + (1 - w) * p_source
+w = sigmoid(4 * candidate_anatomy_score)
+```
+
+`configs/stage9_anatomy_frozen.json` is the immutable experiment specification. `src/stage9_paper_queue.sh` runs the complete 400-image/domain, 3-seed, CD/DC confirmation table and `src/stage9_paper_aggregate.py` rejects missing, nonfinite, or incorrectly sized results.
+
+The Stage9 candidate was selected in an earlier 20-image target smoke sweep, so its complete run is confirmatory rather than an independent model-selection test. The repository reports the existing distance metric as **capped 2D ASSD** because it truncates 2D pixel distances at 10; it must not be described as strict physical-unit ASSD or HD95.

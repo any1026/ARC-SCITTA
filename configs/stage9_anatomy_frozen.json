@@ -1,0 +1,27 @@
+{
+  "schema": "SCITTA-pro-stage9-frozen-v1",
+  "dataset": "Fundus-doFE",
+  "image_size": [320, 320],
+  "target_images_per_domain": 400,
+  "target_domains": ["C", "D"],
+  "orders": ["CD", "DC"],
+  "seeds": [1, 2, 3],
+  "ccd_history_length": 40,
+  "fifo_capacity": 40,
+  "top_k": 5,
+  "variant": "anatomy",
+  "candidate": "Anatomy-SicTTA source-derived hard-anatomy admission",
+  "input_correction": "per-image RGB AdaIN to source-train moments",
+  "feature_mean": [0, 0, 0, 0, 0, 0, 0, 0],
+  "feature_std": [1, 1, 1, 1, 1, 1, 1, 1],
+  "weight": [0, 0, 0, 0, 0, 4, 0, 0],
+  "bias": 0,
+  "fusion": {
+    "formula": "p_final = w * p_candidate + (1 - w) * p_source",
+    "weight_expression": "w = sigmoid(4 * candidate_anatomy_score)"
+  },
+  "metrics": ["OD Dice", "OC Dice", "Macro Dice", "capped 2D ASSD"],
+  "target_labels_used_for_adaptation": false,
+  "assd_disclosure": "The project implementation is a capped 2D pixel-distance ASSD with distance truncation; it is not strict physical-unit ASSD or HD95.",
+  "selection_disclosure": "The anatomy variant was selected in a prior 20-image smoke sweep; this 400-image run is confirmation under the frozen configuration and should be followed by an independent selection/test split before submission."
+}
